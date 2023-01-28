@@ -2,8 +2,6 @@ const express = require('express')
 const { getHospitals, getHospital, createHospital, updateHospital, deleteHospital } = require('../controllers/hospitals')
 const router = express.Router()
 
-const app = express()
-
 router.route('/').get(getHospitals).post(createHospital)
 router.route('/:id').get(getHospital).put(updateHospital).delete(deleteHospital)
 
