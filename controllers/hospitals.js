@@ -87,7 +87,7 @@ exports.getHospital = async (req, res, next) => {
 	}
 }
 
-//@desc     Create all hospitals
+//@desc     Create hospital
 //@route    POST /api/v1/hospitals
 //@access   Private
 exports.createHospital = async (req, res, next) => {
@@ -98,7 +98,7 @@ exports.createHospital = async (req, res, next) => {
 	})
 }
 
-//@desc     Update hospitals
+//@desc     Update hospital
 //@route    PUT /api/v1/hospitals/:id
 //@access   Private
 exports.updateHospital = async (req, res, next) => {
@@ -117,7 +117,7 @@ exports.updateHospital = async (req, res, next) => {
 	}
 }
 
-//@desc     Delete all hospitals
+//@desc     Delete hospital
 //@route    DELETE /api/v1/hospitals/:id
 //@access   Private
 exports.deleteHospital = async (req, res, next) => {
